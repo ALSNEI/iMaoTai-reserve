@@ -71,8 +71,8 @@ for user_section in configs.sections():
             else:
                 user_result.add_success(1, reserve_result_text+polished_reservation_info)
 
-            # 领取小茅运和耐力值
-            process.getUserEnergyAward(mobile)
+        # 领取小茅运和耐力值
+        process.getUserEnergyAward(mobile)
         stat.update(user_result)
     except BaseException as e:
         print(e)
